@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace CowboyCafe.Data
 {
+    /// <summary>
+    /// A class representing the TrailBurger entree
+    /// </summary>
     public class TrailBurger
     {
 
@@ -96,7 +99,6 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
-
 
     }
 }

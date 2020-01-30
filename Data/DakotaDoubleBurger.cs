@@ -3,8 +3,12 @@ using System.Collections.Generic;
 
 namespace CowboyCafe.Data
 {
+    /// <summary>
+    /// A class representing the DakotaDoubleBurger entree
+    /// </summary>
     public class DakotaDoubleBurger
     {
+
         private bool bun = true;
         /// <summary>
         /// If the DakotaDoubleBurger has bun
@@ -85,7 +89,6 @@ namespace CowboyCafe.Data
             set { mayo = value; }
         }
 
-
         /// <summary>
         /// The price of the DakotaDoubleBurger
         /// </summary>
@@ -129,8 +132,6 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
-
-
 
     }
 }

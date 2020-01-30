@@ -3,9 +3,12 @@ using System.Collections.Generic;
 
 namespace CowboyCafe.Data
 {
+    /// <summary>
+    /// A class representing the TexasTripleBurger entree
+    /// </summary>
     public class TexasTripleBurger
     {
- 
+
         private bool bun = true;
         /// <summary>
         /// If the TexasTripleBurger has bun
@@ -106,7 +109,6 @@ namespace CowboyCafe.Data
             set { egg = value; }
         }
 
-
         /// <summary>
         /// The price of the TexasTripleBurger
         /// </summary>
@@ -152,5 +154,6 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+
     }
 }

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace CowboyCafe.Data
 {
+    /// <summary>
+    /// A class representing the AngryChicken entree
+    /// </summary>
     public class AngryChicken
     {
 
@@ -64,8 +67,5 @@ namespace CowboyCafe.Data
             }
         }
 
-
-
      }
-    
 }

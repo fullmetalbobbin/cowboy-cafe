@@ -8,6 +8,7 @@ namespace CowboyCafe.Data
     /// </summary>
     public class CowpokeChili
     {
+
         private bool cheese = true;
         /// <summary>
         /// If the chili is topped with cheese
@@ -87,6 +88,7 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+
     }
 }
 
