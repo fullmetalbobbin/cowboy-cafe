@@ -3,11 +3,12 @@ using System.Collections.Generic;
 
 namespace CowboyCafe.Data
 {
-    public class DakotaDoubleBurger
+    public class TexasTripleBurger
     {
+ 
         private bool bun = true;
         /// <summary>
-        /// If the DakotaDoubleBurger has bun
+        /// If the TexasTripleBurger has bun
         /// </summary>
         public bool Bun
         {
@@ -17,7 +18,7 @@ namespace CowboyCafe.Data
 
         private bool ketchup = true;
         /// <summary>
-        /// If the DakotaDoubleBurger has ketchup
+        /// If the TexasTripleBurger has ketchup
         /// </summary>
         public bool Ketchup
         {
@@ -27,7 +28,7 @@ namespace CowboyCafe.Data
 
         private bool mustard = true;
         /// <summary>
-        /// If the DakotaDoubleBurger has mustard
+        /// If the TexasTripleBurger has mustard
         /// </summary>
         public bool Mustard
         {
@@ -37,7 +38,7 @@ namespace CowboyCafe.Data
 
         private bool pickle = true;
         /// <summary>
-        /// If the DakotaDoubleBurger has pickle
+        /// If the TexasTripleBurger has pickle
         /// </summary>
         public bool Pickle
         {
@@ -47,7 +48,7 @@ namespace CowboyCafe.Data
 
         private bool cheese = true;
         /// <summary>
-        /// If the DakotaDoubleBurger has cheese
+        /// If the TexasTripleBurger has cheese
         /// </summary>
         public bool Cheese
         {
@@ -57,7 +58,7 @@ namespace CowboyCafe.Data
 
         private bool tomato = true;
         /// <summary>
-        /// If the DakotaDoubleBurger has tomato
+        /// If the TexasTripleBurger has tomato
         /// </summary>
         public bool Tomato
         {
@@ -67,7 +68,7 @@ namespace CowboyCafe.Data
 
         private bool lettuce = true;
         /// <summary>
-        /// If the DakotaDoubleBurger has lettuce
+        /// If the TexasTripleBurger has lettuce
         /// </summary>
         public bool Lettuce
         {
@@ -77,7 +78,7 @@ namespace CowboyCafe.Data
 
         private bool mayo = true;
         /// <summary>
-        /// If the DakotaDoubleBurger has mayo
+        /// If the TexasTripleBurger has mayo
         /// </summary>
         public bool Mayo
         {
@@ -85,31 +86,51 @@ namespace CowboyCafe.Data
             set { mayo = value; }
         }
 
+        private bool bacon = true;
+        /// <summary>
+        /// If the TexasTripleBurger has bacon
+        /// </summary>
+        public bool Bacon
+        {
+            get { return bacon; }
+            set { bacon = value; }
+        }
+
+        private bool egg = true;
+        /// <summary>
+        /// If the TexasTripleBurger has egg
+        /// </summary>
+        public bool Egg
+        {
+            get { return egg; }
+            set { egg = value; }
+        }
+
 
         /// <summary>
-        /// The price of the DakotaDoubleBurger
+        /// The price of the TexasTripleBurger
         /// </summary>
         public double Price
         {
             get
             {
-                return 5.20;
+                return 6.45;
             }
         }
 
         /// <summary>
-        /// The calories of the DakotaDoubleBurger
+        /// The calories of the TexasTripleBurger
         /// </summary>
         public uint Calories
         {
             get
             {
-                return 464;
+                return 698;
             }
         }
 
         /// <summary>
-        /// Special instructions for the DakotaDoubleBurger
+        /// Special instructions for the TexasTripleBurger
         /// </summary>
         public List<string> SpecialInstructions
         {
@@ -125,12 +146,11 @@ namespace CowboyCafe.Data
                 if (!tomato) instructions.Add("hold tomato");
                 if (!lettuce) instructions.Add("hold lettuce");
                 if (!mayo) instructions.Add("hold mayo");
+                if (!bacon) instructions.Add("hold bacon");
+                if (!egg) instructions.Add("hold egg");
 
                 return instructions;
             }
         }
-
-
-
     }
 }
