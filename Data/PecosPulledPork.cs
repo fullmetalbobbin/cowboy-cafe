@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* PecosPulledPork.cs
+ * Author: Amanda Dreesen
+ */
+
+using System;
 using System.Collections.Generic;
 
 namespace CowboyCafe.Data

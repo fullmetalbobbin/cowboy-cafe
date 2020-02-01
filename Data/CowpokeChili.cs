@@ -1,4 +1,9 @@
-﻿using System;
+﻿/* CowpokeChilli.cs
+ * Author: CIS 400 - Given
+ * Modified by: Amanda Dreesen
+ */
+
+using System;
 using System.Collections.Generic;
 
 namespace CowboyCafe.Data
