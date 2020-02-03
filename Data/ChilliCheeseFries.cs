@@ -1,4 +1,9 @@
-﻿using System;
+﻿/* ChiliCheeseFries.cs
+ * Author: Amanda Dreesen
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
