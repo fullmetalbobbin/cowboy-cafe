@@ -1,6 +1,10 @@
-﻿/* TexasTripleBurger.cs
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * TexasTripleBurger.cs
  * Author: Amanda Dreesen
- */
+ * Description: CIS308 Cowboy Cafe
+ *              Class to represent the Texas Triple Burger Entree
+ *              - a 3/4lb triple burger
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 using System;
 using System.Collections.Generic;

@@ -1,6 +1,10 @@
-﻿/* PanDeCampo.cs
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * PanDeCampo.cs
  * Author: Amanda Dreesen
- */
+ * Description: CIS308 Cowboy Cafe
+ *              Class to represent the Pan de Campo side
+ *              - pan-fried bread
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 
 using System;

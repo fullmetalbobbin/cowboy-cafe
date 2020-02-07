@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Side.cs
+ * Author: CIS308 - Given
+ * Modified by: Amanda Dreesen
+ * Description: CIS308 Cowboy Cafe
+ *              Base class to represent sides
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 

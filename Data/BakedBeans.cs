@@ -1,6 +1,10 @@
-﻿/* BakedBeans.cs
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * BakedBeans.cs
  * Author: Amanda Dreesen
- */
+ * Description: CIS308 Cowboy Cafe
+ *              Class to represent the Baked Beans side
+ *              - exactly what it sounds like
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 
 using System;

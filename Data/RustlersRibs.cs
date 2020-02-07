@@ -1,6 +1,10 @@
-﻿/* RustlersRibs.cs
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * RustlersRibs.cs
  * Author: Amanda Dreesen
- */
+ * Description: CIS308 Cowboy Cafe
+ *              Class to represent the Rustlers Ribs Entree
+ *              - BBQ spare ribs
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 using System;
 using System.Collections.Generic;

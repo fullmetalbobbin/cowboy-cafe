@@ -1,6 +1,10 @@
-﻿/* ChiliCheeseFries.cs
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * ChiliCheeseFries.cs
  * Author: Amanda Dreesen
- */
+ * Description: CIS308 Cowboy Cafe
+ *              Class to represent the Chili Cheese Fries side
+ *              - sliced potatoes slathered with chili and cheese
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 
 using System;

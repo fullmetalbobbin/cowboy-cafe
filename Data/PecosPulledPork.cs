@@ -1,6 +1,10 @@
-﻿/* PecosPulledPork.cs
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * PecosPulledPork.cs
  * Author: Amanda Dreesen
- */
+ * Description: CIS308 Cowboy Cafe
+ *              Class to represent the Pecos Pulled Pork Entree
+ *              - BBQ pulled pork sandwich
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 using System;
 using System.Collections.Generic;

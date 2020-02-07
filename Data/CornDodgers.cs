@@ -1,6 +1,10 @@
-﻿/* CornDodgers.cs
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * CornDodgers.cs
  * Author: Amanda Dreesen
- */
+ * Description: CIS308 Cowboy Cafe
+ *              Class to represent the Corn Dodgers side
+ *              - a traditional trail treat of fried cornbread
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 
 using System;

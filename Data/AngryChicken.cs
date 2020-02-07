@@ -1,6 +1,10 @@
-﻿/* AngryChicken.cs
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * AngryChicken.cs
  * Author: Amanda Dreesen
- */
+ * Description: CIS308 Cowboy Cafe
+ *              Class to represent the Angry Chicken Entree
+ *              - spicy BBQ chicken sandwich
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 using System;
 using System.Collections.Generic;

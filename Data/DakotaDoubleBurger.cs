@@ -1,6 +1,10 @@
-﻿/* DakotaDoubleBurger.cs
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DakotaDoubleBurger.cs
  * Author: Amanda Dreesen
- */
+ * Description: CIS308 Cowboy Cafe
+ *              Class to represent the Dakota Double Burger Entree
+ *              - a 1/2lb double burger
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 using System;
 using System.Collections.Generic;

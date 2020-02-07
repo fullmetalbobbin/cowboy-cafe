@@ -1,7 +1,11 @@
-﻿/* CowpokeChilli.cs
- * Author: CIS 400 - Given
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * CowpokeChili.cs
+ * Author: CIS308 - Given
  * Modified by: Amanda Dreesen
- */
+ * Description: CIS308 Cowboy Cafe
+ *              Class to represent the Cowpoke Chili Entree
+ *              - a big bowl of spicy chili
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 using System;
 using System.Collections.Generic;
