@@ -14,7 +14,7 @@ namespace CowboyCafe.Data
     /// <summary>
     /// A class representing the PecosPulledPork entree
     /// </summary>
-    public class PecosPulledPork
+    public class PecosPulledPork : Entree
     {
 
         private bool bread = true;
@@ -40,7 +40,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// The price of the PecosPulledPork sammich
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -51,7 +51,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// The calories of the PecosPulledPork sammich
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {

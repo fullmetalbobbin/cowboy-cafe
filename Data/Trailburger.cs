@@ -14,7 +14,7 @@ namespace CowboyCafe.Data
     /// <summary>
     /// A class representing the TrailBurger entree
     /// </summary>
-    public class TrailBurger
+    public class TrailBurger : Entree
     {
 
         private bool bun = true;
@@ -70,7 +70,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// The price of the TrailBurger
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -81,7 +81,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// The calories of the TrailBurger
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {

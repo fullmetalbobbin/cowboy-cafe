@@ -14,12 +14,12 @@ namespace CowboyCafe.Data
     /// <summary>
     /// A class representing the RustlersRibs entree
     /// </summary>
-    public class RustlersRibs
+    public class RustlersRibs : Entree
     {
         /// <summary>
         /// The price of the RustlersRibs
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -30,7 +30,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// The calories of the RustlersRibs
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
