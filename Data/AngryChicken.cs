@@ -62,7 +62,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Special instructions for the preparation of the AngryChicken sammich
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

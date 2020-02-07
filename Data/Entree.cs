@@ -16,13 +16,8 @@ namespace CowboyCafe.Data
     /// </summary>
     public abstract class Entree
     {
-        //It should define properties for Price (double), Calories (uint),
-        //and SpecialInstructions (List of strings) that can be overridden in any derived classes.
-        //Refactor the CowpokeChili, RustlersRibs, PecosPulledPork, TrailBurger, DakotaDouble,
-        //TexasTriple, and Angry Chicken to derive from this Entree base class.
-
         /// <summary>
-        /// Gets the price of the side
+        /// Gets the price of the entree
         /// </summary>
         public abstract double Price { get; }
 
@@ -30,6 +25,11 @@ namespace CowboyCafe.Data
         /// Gets the calories of the entree
         /// </summary>
         public abstract uint Calories { get; }
+
+        /// <summary>
+        /// Gets the size of the entree
+        /// </summary>
+        public virtual List<string> SpecialInstructions { get; set; }
 
     }
 }

@@ -83,7 +83,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Special instructions for the preparation of the chili
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

@@ -142,7 +142,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Special instructions for the TexasTripleBurger
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {
