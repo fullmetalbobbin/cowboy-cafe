@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 using CowboyCafe.Data;
+<<<<<<< HEAD
 
+=======
+/*
+>>>>>>> b8540c01dc3aa85d9a7d7c750640dca14ba62f0f
 namespace CowboyCafe.DataTests
 {
     public class PanDeCampoTest
@@ -54,3 +58,7 @@ namespace CowboyCafe.DataTests
         }
     }
 }
+<<<<<<< HEAD
+=======
+*/
+>>>>>>> b8540c01dc3aa85d9a7d7c750640dca14ba62f0f
