@@ -12,6 +12,9 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
+    /// <summary>
+    /// Enum which stores available sizes
+    /// </summary>
     public enum Size
     {
         Small,

@@ -13,9 +13,14 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
+    /// <summary>
+    /// A class representing the TexasTea drink
+    /// </summary>
     public class TexasTea : Drink
     {
-
+        /// <summary>
+        /// Override method with switch case to return price given size
+        /// </summary>
         public override double Price
         {
             get

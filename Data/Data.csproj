@@ -6,4 +6,7 @@
     <RootNamespace>CowboyCafe.Data</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Documentation\DreesenA_UML.pdf" />
+  </ItemGroup>
 </Project>

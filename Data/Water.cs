@@ -13,8 +13,14 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Water : Drink
     {
+        /// <summary>
+        /// Override method with switch case to return price given size
+        /// </summary>
         public override double Price
         {
             get
@@ -68,7 +74,6 @@ namespace CowboyCafe.Data
         }
 
 
-
         private bool lemon = false;
         /// <summary>
         /// If the Water has lemon
@@ -78,7 +83,6 @@ namespace CowboyCafe.Data
             get { return lemon; }
             set { lemon = value; }
         }
-
 
 
         /// <summary>

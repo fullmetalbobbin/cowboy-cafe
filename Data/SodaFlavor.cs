@@ -11,6 +11,9 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
+    /// <summary>
+    /// Enum which stores soda flavors
+    /// </summary>
     public enum SodaFlavor
     {
         CreamSoda,
