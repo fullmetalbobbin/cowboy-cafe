@@ -58,5 +58,42 @@ namespace CowboyCafe.Data
 
         }
 
+
+        private SodaFlavor flavor;
+        /// <summary>
+        /// Which Jerked Soda flavor
+        /// </summary>
+        public SodaFlavor Flavor
+        {
+            get { return flavor; }
+            set { flavor = value; }
+        }
+        
+
+        private bool ice = true;
+        /// <summary>
+        /// If the JerkedSoda has ice
+        /// </summary>
+        public override bool Ice
+        {
+            get { return ice; }
+            set { ice = value; }
+        }
+
+        /// <summary>
+        /// Special instructions for JerkedSoda
+        /// </summary>
+        public override List<string> SpecialInstructions
+        {
+            get
+            {
+                var instructions = new List<string>();
+
+                if (!ice) instructions.Add("Hold Ice");
+
+                return instructions;
+            }
+        }
+
     }
 }

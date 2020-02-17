@@ -57,6 +57,46 @@ namespace CowboyCafe.Data
 
         }
 
+        private bool ice = true;
+        /// <summary>
+        /// If the Water has ice
+        /// </summary>
+        public override bool Ice
+        {
+            get { return ice; }
+            set { ice = value; }
+        }
+
+
+
+        private bool lemon = false;
+        /// <summary>
+        /// If the Water has lemon
+        /// </summary>
+        public bool Lemon
+        {
+            get { return lemon; }
+            set { lemon = value; }
+        }
+
+
+
+        /// <summary>
+        /// Special instructions for Water
+        /// </summary>
+        public override List<string> SpecialInstructions
+        {
+            get
+            {
+                var instructions = new List<string>();
+
+                if (!ice) instructions.Add("Hold Ice");
+                if (!lemon) instructions.Add("Add Lemon");
+
+                return instructions;
+            }
+        }
+
 
     }
 }

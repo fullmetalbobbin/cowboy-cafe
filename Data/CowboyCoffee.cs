@@ -56,5 +56,44 @@ namespace CowboyCafe.Data
             }
 
         }
+
+
+        private bool ice = false;
+        /// <summary>
+        /// If the CowboyCoffee has ice
+        /// </summary>
+        public override bool Ice
+        {
+            get { return ice; }
+            set { ice = value; }
+        }
+
+        private bool roomForCream = false;
+        /// <summary>
+        /// If the CowboyCoffee has room for cream
+        /// </summary>
+        public bool RoomForCream
+        {
+            get { return roomForCream; }
+            set { roomForCream = value; }
+        }
+
+
+        /// <summary>
+        /// Special instructions for CowboyCOfee
+        /// </summary>
+        public override List<string> SpecialInstructions
+        {
+            get
+            {
+                var instructions = new List<string>();
+
+                if (!ice) instructions.Add("Add Ice");
+                if (!roomForCream) instructions.Add("Room for Cream");
+
+                return instructions;
+            }
+        }
+
     }
 }
