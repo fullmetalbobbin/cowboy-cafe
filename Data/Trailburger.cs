@@ -108,5 +108,16 @@ namespace CowboyCafe.Data
             }
         }
 
+
+        /// <summary>
+        /// Converts the object to a string
+        /// Returns the representations of an entree
+        /// </summary>
+        /// <returns>The string "Trailburger" </returns>
+        public override string ToString()
+        {
+            return "Trailburger";
+        }
+
     }
 }
