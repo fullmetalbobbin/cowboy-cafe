@@ -63,5 +63,25 @@ namespace PointOfSale
         {
             OrderList.Items.Add(new TexasTripleBurger());
         }
+
+        private void AddChiliCheeseFriesButton_Click(object sender, RoutedEventArgs e)
+        {
+            OrderList.Items.Add(new ChiliCheeseFries());
+        }
+
+        private void AddCornDodgersButton_Click(object sender, RoutedEventArgs e)
+        {
+            OrderList.Items.Add(new CornDodgers());
+        }
+
+        private void AddPanDeCampoButton_Click(object sender, RoutedEventArgs e)
+        {
+            OrderList.Items.Add(new PanDeCampo());
+        }
+
+        private void AddBakedBeansButton_Click(object sender, RoutedEventArgs e)
+        {
+            OrderList.Items.Add(new BakedBeans());
+        }
     }
 }

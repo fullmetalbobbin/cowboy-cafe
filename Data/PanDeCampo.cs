@@ -63,6 +63,16 @@ namespace CowboyCafe.Data
 
         }
 
+        /// <summary>
+        /// Converts the object to a string
+        /// Returns the representations of a side
+        /// </summary>
+        /// <returns>The string "Pan de Campo" </returns>
+        public override string ToString()
+        {
+            return "Pan de Campo - " + Size;
+        }
+
 
     }
 }

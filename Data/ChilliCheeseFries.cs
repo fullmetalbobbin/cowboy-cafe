@@ -63,6 +63,16 @@ namespace CowboyCafe.Data
             
         }
 
+        /// <summary>
+        /// Converts the object to a string
+        /// Returns the representations of a side
+        /// </summary>
+        /// <returns>The string "Chili Cheese Fries" </returns>
+        public override string ToString()
+        {
+            return "Chili Cheese Fries - " + Size;
+        }
+
 
     }
 }

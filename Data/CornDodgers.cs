@@ -63,5 +63,15 @@ namespace CowboyCafe.Data
 
             }
 
+        /// <summary>
+        /// Converts the object to a string
+        /// Returns the representations of a side
+        /// </summary>
+        /// <returns>The string "Corn Dodgers" </returns>
+        public override string ToString()
+        {
+            return "Corn Dodgers - " + Size;
+        }
+
     }
 }
