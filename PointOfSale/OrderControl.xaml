@@ -24,11 +24,33 @@
         <StackPanel >
             <TextBlock TextAlignment="Center">Entrees</TextBlock>
             <Button Name="AddAngryChickenButton">AngryChicken</Button>
-            <Button>Cowpoke Chili</Button>
+            <Button Name="AddCowpokeChiliButton" Click="AddCowpokeChiliButton_Click">Cowpoke Chili</Button>
+            <Button Name="AddRustlersRibsButton">Rustler's Ribs</Button>
+            <Button Name="AddPecosPulledPorkButton">Pecos Pulled Pork</Button>
+            <Button Name="AddTrailBurgerButton">Trail Burger</Button>
+            <Button Name="AddDakotaDoubleBurgerButton">Dakota Double Burger</Button>
+            <Button Name="AddTexasTripleBurgerButton">Texas Triple Burger</Button>
         </StackPanel>
 
         <StackPanel Grid.Column="1">
             <TextBlock TextAlignment="Center">Side</TextBlock>
+            <Button Name="AddChiliCheeseFriesButton">Chili Cheese Fries</Button>
+            <Button Name="AddCornDodgersButton">Corn Dodgers</Button>
+            <Button Name="AddPanDeCampoButton">Pan de Campo</Button>
+            <Button Name="AddBakedBeansButton">Baked Beans</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2">
+            <TextBlock TextAlignment="Center">Drinks</TextBlock>
+            <Button Name="AddJerkedSodaButton">Jerked Soda</Button>
+            <Button Name="AddTexasTeaButton">Texas Tea</Button>
+            <Button Name="AddCowboyCoffeeButton">Cowboy Coffee</Button>
+            <Button Name="AddWaterButton">Water</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="3">
+            <TextBlock TextAlignment="Center">Order</TextBlock>
+            <ListBox Name="OrderList"></ListBox>
         </StackPanel>
 
         
