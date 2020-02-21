@@ -95,10 +95,20 @@ namespace CowboyCafe.Data
                 var instructions = new List<string>();
 
                 if (!ice) instructions.Add("Hold Ice");
-                if (!lemon) instructions.Add("Add Lemon");
+                if (lemon) instructions.Add("Add Lemon");
 
                 return instructions;
             }
+        }
+
+        /// <summary>
+        /// Converts the object to a string
+        /// Returns the representations of a drink
+        /// </summary>
+        /// <returns>The string "Water" and the size</returns>
+        public override string ToString()
+        {
+            return Size + " Water";
         }
 
 

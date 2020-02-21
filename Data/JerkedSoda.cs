@@ -102,5 +102,15 @@ namespace CowboyCafe.Data
             }
         }
 
+        /// <summary>
+        /// Converts the object to a string
+        /// Returns the representations of a drink
+        /// </summary>
+        /// <returns>The string "Jerked Soda" and size and flavor </returns>
+        public override string ToString()
+        {
+            return Size + " " + Flavor +  " Jerked Soda";
+        }
+
     }
 }

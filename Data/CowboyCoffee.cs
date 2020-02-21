@@ -64,6 +64,7 @@ namespace CowboyCafe.Data
         }
 
 
+
         private bool ice = false;
         /// <summary>
         /// If the CowboyCoffee has ice
@@ -73,6 +74,18 @@ namespace CowboyCafe.Data
             get { return ice; }
             set { ice = value; }
         }
+
+
+        private bool decaf = false;
+        /// <summary>
+        /// If the Cowboy Coffee is decaf and useless
+        /// </summary>
+        public bool Decaf
+        {
+            get { return decaf; }
+            set { decaf = value; }
+        }
+
 
         private bool roomForCream = false;
         /// <summary>
@@ -94,11 +107,25 @@ namespace CowboyCafe.Data
             {
                 var instructions = new List<string>();
 
-                if (!ice) instructions.Add("Add Ice");
-                if (!roomForCream) instructions.Add("Room for Cream");
+                if (ice) instructions.Add("Add Ice");
+                if (roomForCream) instructions.Add("Room for Cream");
 
                 return instructions;
             }
+        }
+
+        /// <summary>
+        /// Converts the object to a string
+        /// Returns the representations of a drink
+        /// </summary>
+        /// <returns>The string "Cowboy Coffee" and Size and Decaf</returns>
+        public override string ToString()
+        {
+            if (decaf)
+            {
+                return Size + " Decaf Cowboy Coffee";
+            }
+            return Size + " Cowboy Coffee";
         }
 
     }

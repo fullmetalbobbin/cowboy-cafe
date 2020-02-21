@@ -113,10 +113,10 @@ namespace CowboyCafe.Data
         /// Converts the object to a string
         /// Returns the representations of an entree
         /// </summary>
-        /// <returns>The string "Trailburger" </returns>
+        /// <returns>The string "Trail Burger" </returns>
         public override string ToString()
         {
-            return "Trailburger";
+            return "Trail Burger";
         }
 
     }

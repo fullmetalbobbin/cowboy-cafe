@@ -54,7 +54,7 @@ namespace CowboyCafe.Data
                         if (!Sweet) return 18;
                         return 36;
                     case Size.Medium:
-                        if (!Sweet) return 22;
+                        if (!Sweet) return 11;
                         return 22;
                     case Size.Small:
                         if (!Sweet) return 5;
@@ -97,6 +97,10 @@ namespace CowboyCafe.Data
             set { sweet = value; }
         }
 
+
+
+
+
         /// <summary>
         /// Special instructions for TexasTea
         /// </summary>
@@ -107,10 +111,24 @@ namespace CowboyCafe.Data
                 var instructions = new List<string>();
 
                 if (!ice) instructions.Add("Hold Ice");
-                if (!lemon) instructions.Add("Add Lemon");
+                if (lemon) instructions.Add("Add Lemon");
 
                 return instructions;
             }
+        }
+
+        /// <summary>
+        /// Converts the object to a string
+        /// Returns the representations of a drink
+        /// </summary>
+        /// <returns>The string "Texas Tea" and Size and Sweet presence</returns>
+        public override string ToString()
+        {
+            if (!Sweet)
+            {
+                return Size + " Texas Plain Tea";
+            }
+            return Size +" Texas Sweet Tea";
         }
 
     }
