@@ -14,7 +14,7 @@ using System.Text;
 namespace CowboyCafe.Data
 {
     /// <summary>
-    /// 
+    /// A class representing the Water drink
     /// </summary>
     public class Water : Drink
     {

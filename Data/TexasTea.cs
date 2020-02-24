@@ -98,9 +98,6 @@ namespace CowboyCafe.Data
         }
 
 
-
-
-
         /// <summary>
         /// Special instructions for TexasTea
         /// </summary>
