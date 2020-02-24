@@ -111,21 +111,18 @@ namespace CowboyCafe.Data
         {
            switch (Flavor)
             {
-                case CreamSoda:
-                    return Size + " Cream Soda Jerked Soda";
-                    break;
-                case OrangeSoda:
-                    return Size + " Orange Soda Jerked Soda";
-                    break;
-                case Sarsparilla:
-                    return Size + " Sarsparilla Jerked Soda";
-                    break;
-                case BirchBeer:
-                    return Size + " Birch Beer Jerked Soda";
-                    break;
-                case RootBeer:
+                case SodaFlavor.CreamSoda:
+                    return Size + " Cream Soda Jerked Soda";    
+                case SodaFlavor.OrangeSoda:
+                    return Size + " Orange Soda Jerked Soda";                   
+                case SodaFlavor.Sarsparilla:
+                    return Size + " Sarsparilla Jerked Soda";                   
+                case SodaFlavor.BirchBeer:
+                    return Size + " Birch Beer Jerked Soda";                
+                case SodaFlavor.RootBeer:
                     return Size + " Root Beer Jerked Soda";
-                    break;
+                default:
+                    throw new NotImplementedException("Unknown flavor");
 
             }
 
