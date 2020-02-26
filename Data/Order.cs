@@ -15,35 +15,34 @@ namespace CowboyCafe.Data
     /// <summary>
     /// A class to represent food/drink/nom orders 
     /// </summary>
-    class Order : IOrderItem, INotifyPropertyChanged
+    public class Order : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
+
+        public event PropertyChangedEventHandler PropertyChanged; //*approvedinclass 
+        //(saying that any of the public properties, we will tell the event listeners about this change!)
 
 
         private static uint lastOrderNumber;
 
         private List<IOrderItem> items;
 
-        public IEnumerable<IOrderItem> Items { get; }
 
-        
-        private double subtotal; 
+        public IEnumerable<IOrderItem> Items => throw new NotImplementedException();
+    
+
+
+        public double Subtotal => 0;  //*inclass
+        /*private double subtotal; 
         /// <summary>
         /// The subtotal of order
         /// </summary>
         public double Subtotal
         {
+
             get { return subtotal; }
             set { subtotal = value; }
-        }
+        }*/
 
-
-        //wut?
-        public override double Price => throw new NotImplementedException();
-
-
-        //wut?
-        public override IEnumerable<string> SpecialInstructions => items.ToArray();
 
 
         /// <summary>
@@ -60,7 +59,7 @@ namespace CowboyCafe.Data
         /// Method to remove and item from the order
         /// </summary>
         /// <param name="item">Represents the given menu item</param>
-        private void Remove(IOrderItem item)
+        public void Remove(IOrderItem item)
         {
             items.Remove(item);
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));

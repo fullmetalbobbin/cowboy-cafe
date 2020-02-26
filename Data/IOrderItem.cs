@@ -14,17 +14,25 @@ namespace CowboyCafe.Data
     /// <summary>
     /// An interface representing IOrderItems
     /// </summary>
-    interface IOrderItem
+    public interface IOrderItem
     {
+
+
+        public double Price { get; }
+
+        public List<string> SpecialInstructions { get; }
+
+        
+
         /// <summary>
         /// Gets the price of and item
         /// </summary>
-        public abstract double Price { get; }
+        //public abstract double Price { get; }
 
         /// <summary>
         /// Gets the special instructions for an item
         /// </summary>
-        public virtual IEnumerable<string> SpecialInstructions { get; }
+        //public virtual IEnumerable<string> SpecialInstructions { get; }
 
     }
 }
