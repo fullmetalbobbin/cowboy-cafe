@@ -1,5 +1,5 @@
 ﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * Side.cs
+ * Entree.cs
  * Author: Amanda Dreesen
  * Description: CIS308 Cowboy Cafe
  *              Base class to represent entrees
