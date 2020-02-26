@@ -15,7 +15,7 @@ namespace CowboyCafe.Data
     /// <summary>
     /// A class to represent food/drink/nom orders 
     /// </summary>
-    class Order : IOrderItem
+    class Order : IOrderItem, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -26,7 +26,7 @@ namespace CowboyCafe.Data
 
         public IEnumerable<IOrderItem> Items { get; }
 
-
+        
         private double subtotal; 
         /// <summary>
         /// The subtotal of order
