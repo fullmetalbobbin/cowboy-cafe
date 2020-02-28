@@ -26,17 +26,13 @@ namespace CowboyCafe.Data
         public uint OrderNumber { get { return lastOrderNumber++; } }
 
 
-
         private List<IOrderItem> items = new List<IOrderItem>();  //?
-
-
         public IEnumerable<IOrderItem> Items { get { return items.ToArray(); } }
 
+
         //public IEnumerable<IOrderItem> Items => throw new NotImplementedException();
-    
-
-
         //public double Subtotal => 0;  //*inclass
+
 
         private double subtotal; 
         /// <summary>
@@ -44,12 +40,9 @@ namespace CowboyCafe.Data
         /// </summary>
         public double Subtotal
         {
-
             get { return subtotal; }
             set { subtotal = value; }
         }
-
-
 
         /// <summary>
         /// Method to add an item to the order
@@ -59,6 +52,7 @@ namespace CowboyCafe.Data
         {
             items.Add(item);
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Subtotal"));
         }
 
         /// <summary>
@@ -69,6 +63,7 @@ namespace CowboyCafe.Data
         {
             items.Remove(item);
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Subtotal"));
         }
 
     }

@@ -9,13 +9,12 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="2*"/>
+           <!--<ColumnDefinition Width="1*"/>-->
         </Grid.ColumnDefinitions>
         <Button Width="150" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40,20,0,0">Item Selection</Button>
-        <Button Width="150" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="20,20,0,0">Cancel Order</Button>
-        <Button Width="150" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,20,20,0">Complete Order</Button>
+        <Button Width="150" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,195,0">Cancel Order</Button>
+        <Button Width="150" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,20,250,0">Complete Order</Button>
 
-        <local:OrderSummaryControl Grid.Column="1" VerticalAlignment="Bottom" Margin="0,0,10,10"></local:OrderSummaryControl>
         <local:OrderControl Margin="10,40,0,0"></local:OrderControl>
     </Grid>
 </Window>

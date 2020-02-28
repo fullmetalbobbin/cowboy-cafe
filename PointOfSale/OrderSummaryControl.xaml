@@ -6,14 +6,19 @@
              xmlns:local="clr-namespace:PointOfSale"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="ListBox">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+        </Style>
+    </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="240">
+            <ColumnDefinition Width="200">
             </ColumnDefinition>
-            <ColumnDefinition >
+            <ColumnDefinition Width="100">
             </ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
+       </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
             <RowDefinition Height="25">
             </RowDefinition>
             <RowDefinition Height="400">
@@ -21,31 +26,35 @@
             <RowDefinition Height="25">
             </RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock VerticalAlignment="Center" FontSize="16" Grid.ColumnSpan="1">Order</TextBlock>
+        <TextBlock VerticalAlignment="Center" FontSize="16" Grid.Row="0" Grid.ColumnSpan="1">Order</TextBlock>
+        <TextBlock Text="{Binding Path=OrderNumber}" VerticalAlignment="Center" FontSize="16" Grid.Row="0" Grid.ColumnSpan="1"/>
         <TextBlock VerticalAlignment="Center" FontSize="16" Grid.Row="2"> Subtotal</TextBlock>
-        <ListBox ItemsSource="{Binding Path=Order}" Grid.Row="1">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
-        <ListBox ItemsSource="{Binding Path=Order.Price}" Grid.Row="1" Grid.Column="1">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+   
+            <ListBox ItemsSource="{Binding Path=Items}" Grid.Row="1" Grid.Column="0">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="{Binding}" FontWeight="Bold"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <ListBox ItemsSource="{Binding Path=Price}" Grid.Row="1" Grid.Column="1">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
         <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding Path=Subtotal, StringFormat=c}"/>
     </Grid>
-    
 </UserControl>

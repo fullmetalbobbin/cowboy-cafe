@@ -19,88 +19,136 @@ namespace PointOfSale
     /// </summary>
     public partial class OrderControl : UserControl
     {
+
         public OrderControl()
         {
             InitializeComponent();
+
             //AddAngryChickenButton.Height = 40;
-            //AddPecosPulledPorkButton.Click += AddPecosPulledPorkButtonClick;
+            //AddPecosPulledPorkButton.Click += AddPecosPulledPorkButton_Click;
         }
 
 
         private void AddAngryChickenButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new AngryChicken());
+
+            if (DataContext is Order o)
+            {
+                o.Add(new AngryChicken());
+            }
         }
 
         private void AddCowpokeChiliButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new CowpokeChili());
+            if (DataContext is Order o)
+            {
+                o.Add(new CowpokeChili());
+            }
         }
 
 
         private void AddRustlersRibsButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new RustlersRibs());
+            if (DataContext is Order o)
+            {
+                o.Add(new RustlersRibs());
+            }
         }
 
         private void AddPecosPulledPorkButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new PecosPulledPork());
+            if (DataContext is Order o)
+            {
+                o.Add(new PecosPulledPork());
+            }
         }
 
         private void AddTrailBurgerButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new TrailBurger());
+            if (DataContext is Order o)
+            {
+                o.Add(new TrailBurger());
+            }
         }
 
         private void AddDakotaDoubleBurgerButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new DakotaDoubleBurger());
+            if (DataContext is Order o)
+            {
+                o.Add(new DakotaDoubleBurger());
+            }
         }
 
         private void AddTexasTripleBurgerButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new TexasTripleBurger());
+            if (DataContext is Order o)
+            {
+                o.Add(new TexasTripleBurger());
+            }
         }
 
         private void AddChiliCheeseFriesButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new ChiliCheeseFries());
+            if (DataContext is Order o)
+            {
+                o.Add(new ChiliCheeseFries());
+            }
         }
 
         private void AddCornDodgersButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new CornDodgers());
+            if (DataContext is Order o)
+            {
+                o.Add(new CornDodgers());
+            }
         }
 
         private void AddPanDeCampoButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new PanDeCampo());
+            if (DataContext is Order o)
+            {
+                o.Add(new PanDeCampo());
+            }
         }
 
         private void AddBakedBeansButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new BakedBeans());
+            if (DataContext is Order o)
+            {
+                o.Add(new BakedBeans());
+            }
         }
 
         private void AddJerkedSodaButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new JerkedSoda());
+            if (DataContext is Order o)
+            {
+                o.Add(new JerkedSoda());
+            }
         }
 
         private void AddTexasTeaButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new TexasTea());
+            if (DataContext is Order o)
+            {
+                o.Add(new TexasTea());
+            }
         }
 
         private void AddCowboyCoffeeButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new CowboyCoffee());
+            if (DataContext is Order o)
+            {
+                o.Add(new CowboyCoffee());
+            }
         }
 
         private void AddWaterButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderList.Items.Add(new Water());
+            if (DataContext is Order o)
+            {
+                o.Add(new Water());
+            }
         }
 
     }
