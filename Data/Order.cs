@@ -22,7 +22,15 @@ namespace CowboyCafe.Data
         //(saying that any of the public properties, we will tell the event listeners about this change!)
 
 
-        private static uint lastOrderNumber;
+        private uint lastOrderNumber = 0;
+
+ 
+        public Order(uint lastOrderNumber)
+        {
+            this.lastOrderNumber = lastOrderNumber++;
+        }
+
+
 
         private List<IOrderItem> items;
 

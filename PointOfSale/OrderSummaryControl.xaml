@@ -21,12 +21,7 @@
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
-
         </ListBox>
-
     </StackPanel>
-
-    
-
 
 </UserControl>
