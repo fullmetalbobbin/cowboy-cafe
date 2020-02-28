@@ -9,8 +9,21 @@
 
     <StackPanel>
         <TextBlock FontSize="18" Text="{Binding Path=Order.lastOrderNumber}">Order</TextBlock>
-        <ListBox ItemsSource="{Binding Path=Order}"></ListBox>
-        <TextBox Text="{Binding Path=Subtotal, StringFormat=c}" />
+        <ListBox ItemsSource="{Binding Path=Order}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Text="{Binding Path=Subtotal, StringFormat=c}" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+
     </StackPanel>
 
     
