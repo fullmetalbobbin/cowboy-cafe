@@ -7,11 +7,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="300">
 
+    <StackPanel>
+        <TextBlock FontSize="18" Text="{Binding Path=Order.lastOrderNumber}">Order</TextBlock>
+        <ListBox ItemsSource="{Binding Path=Order}"></ListBox>
+        <TextBox Text="{Binding Path=Subtotal, StringFormat=c}" />
+    </StackPanel>
 
-    <DockPanel>
-        <TextBlock DockPanel.Dock="Top" VerticalAlignment="Center" FontSize="18">Order</TextBlock>
-        <TextBlock Height="300"></TextBlock>
-        <TextBlock DockPanel.Dock="Bottom" FontSize="18">Subtotal</TextBlock>
-    </DockPanel>
+    
+
 
 </UserControl>
