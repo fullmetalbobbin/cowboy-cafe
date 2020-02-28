@@ -29,5 +29,7 @@ namespace PointOfSale
             //must note that both properties chagen for price col and  item col - update BOTH!
            
         }
+
+
     }
 }

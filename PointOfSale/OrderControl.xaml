@@ -23,6 +23,7 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <StackPanel >
@@ -52,9 +53,9 @@
             <Button Name="AddWaterButton" Click="AddWaterButton_Click">Water</Button>
         </StackPanel>
 
-        <!--<StackPanel Grid.Column="3">
+       <StackPanel Grid.Column="3">
             <TextBlock TextAlignment="Center">Order</TextBlock>
             <ListBox Name="OrderList"></ListBox>
-        </StackPanel>-->
+        </StackPanel>
     </Grid>
 </UserControl>

@@ -27,11 +27,10 @@ namespace PointOfSale
         }
 
 
-
         private void AddAngryChickenButton_Click(object sender, RoutedEventArgs e)
         {
             OrderList.Items.Add(new AngryChicken());
-        } 
+        }
 
         private void AddCowpokeChiliButton_Click(object sender, RoutedEventArgs e)
         {
@@ -103,5 +102,6 @@ namespace PointOfSale
         {
             OrderList.Items.Add(new Water());
         }
+
     }
 }
