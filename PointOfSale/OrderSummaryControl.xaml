@@ -8,12 +8,9 @@
              d:DesignHeight="450" d:DesignWidth="300">
     <Grid>
         <Grid.ColumnDefinitions>
-            
             <ColumnDefinition Width="240">
-
             </ColumnDefinition>
             <ColumnDefinition >
-
             </ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -24,9 +21,20 @@
             <RowDefinition Height="25">
             </RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock VerticalAlignment="Center" FontSize="16" Grid.ColumnSpan="2">Order</TextBlock>
-        <TextBlock VerticalAlignment="Center" FontSize="16" Grid.Row="3"> Subtotal</TextBlock>
-        
+        <TextBlock VerticalAlignment="Center" FontSize="16" Grid.ColumnSpan="1">Order</TextBlock>
+        <TextBlock VerticalAlignment="Center" FontSize="16" Grid.Row="2"> Subtotal</TextBlock>
+        <ListBox ItemsSource="{Binding Path=Order}" Grid.Row="1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding Path=Subtotal, StringFormat=c}"/>
     </Grid>
-
+    
 </UserControl>
