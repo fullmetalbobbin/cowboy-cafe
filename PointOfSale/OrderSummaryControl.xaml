@@ -6,19 +6,12 @@
              xmlns:local="clr-namespace:PointOfSale"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="300">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition>
-            </RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
 
-        <StackPanel>
-            
-        </StackPanel>
-            
-    </Grid>
+
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top" VerticalAlignment="Center" FontSize="18">Order</TextBlock>
+        <TextBlock Height="300"></TextBlock>
+        <TextBlock DockPanel.Dock="Bottom" FontSize="18">Subtotal</TextBlock>
+    </DockPanel>
+
 </UserControl>
