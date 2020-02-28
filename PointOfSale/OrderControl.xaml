@@ -57,6 +57,6 @@
             <TextBlock TextAlignment="Center">Order</TextBlock>
             <ListBox Name="OrderList"></ListBox>
         </StackPanel>-->
-        <local:OrderSummaryControl x:Name="OrderSummary" Grid.Column="3" VerticalAlignment="Bottom" Margin="0,0,10,10"></local:OrderSummaryControl>
+        <local:OrderSummaryControl x:Name="OrderSummary" Grid.Column="3"></local:OrderSummaryControl>
     </Grid>
 </UserControl>
