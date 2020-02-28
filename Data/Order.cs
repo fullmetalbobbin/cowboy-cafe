@@ -22,25 +22,23 @@ namespace CowboyCafe.Data
         //(saying that any of the public properties, we will tell the event listeners about this change!)
 
 
-        private uint lastOrderNumber = 0;
-
- 
-        public Order(uint lastOrderNumber)
-        {
-            this.lastOrderNumber = lastOrderNumber++;
-        }
+        private static uint lastOrderNumber = 0;  
+        public uint OrderNumber { get { return lastOrderNumber++; } }
 
 
 
-        private List<IOrderItem> items;
+        private List<IOrderItem> items = new List<IOrderItem>();  //?
 
 
-        public IEnumerable<IOrderItem> Items => throw new NotImplementedException();
+        public IEnumerable<IOrderItem> Items { get { return items.ToArray(); } }
+
+        //public IEnumerable<IOrderItem> Items => throw new NotImplementedException();
     
 
 
-        public double Subtotal => 0;  //*inclass
-        /*private double subtotal; 
+        //public double Subtotal => 0;  //*inclass
+
+        private double subtotal; 
         /// <summary>
         /// The subtotal of order
         /// </summary>
@@ -49,7 +47,7 @@ namespace CowboyCafe.Data
 
             get { return subtotal; }
             set { subtotal = value; }
-        }*/
+        }
 
 
 
