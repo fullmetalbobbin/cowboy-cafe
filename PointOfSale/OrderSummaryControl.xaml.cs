@@ -23,8 +23,10 @@ namespace PointOfSale
         {
             InitializeComponent();
 
-            var data = new Order(1);
+            var data = new Order();
             this.DataContext = data;  //is this right?
+
+            //must note that both properties chagen for price col and  item col - update BOTH!
            
         }
     }
