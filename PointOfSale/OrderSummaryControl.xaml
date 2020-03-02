@@ -29,22 +29,21 @@
         <TextBlock VerticalAlignment="Center" FontSize="16" Grid.Row="0" Grid.ColumnSpan="1">Order #</TextBlock>
         <TextBlock Text="{Binding Path=OrderNumber}" VerticalAlignment="Center" FontSize="16" Grid.Row="0" Grid.ColumnSpan="1" Margin="60,0,0,0"/>
         <TextBlock VerticalAlignment="Center" FontSize="16" Grid.Row="2"> Subtotal</TextBlock>
-   
-            <ListBox ItemsSource="{Binding Path=Items}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <Grid ShowGridLines="True">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <TextBlock Text="{Binding}" />
-                            <TextBlock Text="{Binding Path=Price, StringFormat=c }" Grid.Column="1" TextAlignment="Right"/>
-                        </Grid>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
 
-        <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Path=Subtotal, StringFormat=c}"/>
+        <ListBox ItemsSource="{Binding Path=Items}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid ShowGridLines="True">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding}" />
+                        <TextBlock Text="{Binding Path=Price, StringFormat=c }" Grid.Column="1" TextAlignment="Right"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Path=Subtotal, StringFormat=c}" TextAlignment="Right"/>
     </Grid>
 </UserControl>

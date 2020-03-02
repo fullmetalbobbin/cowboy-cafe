@@ -28,8 +28,6 @@ namespace PointOfSale
             InitializeComponent();
             var order = new Order();
             this.DataContext = order;
-
-
         }
 
         private void ItemSelectionButton_Click(object sender, RoutedEventArgs e)
