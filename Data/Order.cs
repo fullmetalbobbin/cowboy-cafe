@@ -41,7 +41,7 @@ namespace CowboyCafe.Data
         public double Subtotal
         {
             get { return subtotal; }
-            set { subtotal = value; }
+            set { subtotal = subtotal + value; }
         }
 
         /// <summary>

@@ -11,9 +11,9 @@
             <ColumnDefinition Width="5*"/>
            <!--<ColumnDefinition Width="1*"/>-->
         </Grid.ColumnDefinitions>
-        <Button Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Left" Margin="60,15,0,0">Item Selection</Button>
-        <Button Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Center" Margin="0,15,235,0">Cancel Order</Button>
-        <Button Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Right" Margin="0,15,300,0">Complete Order</Button>
+        <Button Name="ItemSelectionButton" Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Left" Margin="60,15,0,0" Click="ItemSelectionButton_Click">Item Selection</Button>
+        <Button Name="CancelOrderButton" Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Center" Margin="0,15,235,0" Click="CancelOrderButton_Click">Cancel Order</Button>
+        <Button Name="CompleteOrderButton" Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Right" Margin="0,15,300,0" Click="Button_Click">Complete Order</Button>
 
         <local:OrderControl Margin="0,40,0,0"></local:OrderControl>
     </Grid>

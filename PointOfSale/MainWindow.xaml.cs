@@ -1,4 +1,4 @@
-﻿using CowboyCafe.Data;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CowboyCafe.Data;
+
 
 namespace PointOfSale
 {
@@ -25,7 +27,24 @@ namespace PointOfSale
         {
             InitializeComponent();
             var order = new Order();
-            this.DataContext = order;
+            this.DataContext = order;         
+        }
+
+        private void ItemSelectionButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CancelOrderButton_Click(object sender, RoutedEventArgs e)
+        {
+            var order = new Order();
+            this.DataContext = new Order();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var order = new Order();
+            this.DataContext = new Order();
         }
     }
 }
