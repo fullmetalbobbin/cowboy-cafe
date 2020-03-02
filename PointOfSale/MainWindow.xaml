@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PointOfSale"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="900">
+        Title="MainWindow" Height="550" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="5*"/>
@@ -15,6 +15,6 @@
         <Button Name="CancelOrderButton" Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Center" Margin="0,15,235,0" Click="CancelOrderButton_Click">Cancel Order</Button>
         <Button Name="CompleteOrderButton" Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Right" Margin="0,15,300,0" Click="CompleteOrderButton_Click">Complete Order</Button>
 
-        <local:OrderControl Margin="0,40,0,0"></local:OrderControl>
+        <local:OrderControl Margin="10,52,0,12"></local:OrderControl>
     </Grid>
 </Window>
