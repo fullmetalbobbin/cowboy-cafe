@@ -41,7 +41,7 @@ namespace PointOfSale
             this.DataContext = new Order();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CompleteOrderButton_Click(object sender, RoutedEventArgs e)
         {
             var order = new Order();
             this.DataContext = new Order();
