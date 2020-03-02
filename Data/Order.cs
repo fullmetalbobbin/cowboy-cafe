@@ -30,18 +30,27 @@ namespace CowboyCafe.Data
         public IEnumerable<IOrderItem> Items { get { return items.ToArray(); } }
 
 
+        private List<IOrderItem> prices = new List<IOrderItem>();  //?
+        public IEnumerable<IOrderItem> Prices { get { return prices.ToArray(); } }
         //public IEnumerable<IOrderItem> Items => throw new NotImplementedException();
         //public double Subtotal => 0;  //*inclass
 
 
-        private double subtotal; 
         /// <summary>
         /// The subtotal of order
         /// </summary>
         public double Subtotal
         {
-            get { return subtotal; }
-            set { subtotal = subtotal + value; }
+            get 
+            {
+                double subtotal = 0;
+                foreach(IOrderItem item in items)
+                {
+                    subtotal += item.Price; 
+                }
+                return subtotal;
+            }
+            
         }
 
         /// <summary>

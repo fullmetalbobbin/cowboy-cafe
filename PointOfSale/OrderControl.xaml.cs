@@ -35,6 +35,7 @@ namespace PointOfSale
             if (DataContext is Order o)
             {
                 o.Add(new AngryChicken());
+                
             }
         }
 

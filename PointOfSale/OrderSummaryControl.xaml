@@ -30,33 +30,21 @@
         <TextBlock Text="{Binding Path=OrderNumber}" VerticalAlignment="Center" FontSize="16" Grid.Row="0" Grid.ColumnSpan="1" Margin="60,0,0,0"/>
         <TextBlock VerticalAlignment="Center" FontSize="16" Grid.Row="2"> Subtotal</TextBlock>
    
-            <ListBox ItemsSource="{Binding Path=Items}" Grid.Row="1" Grid.Column="0">
+            <ListBox ItemsSource="{Binding Path=Items}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Grid>
+                        <Grid ShowGridLines="True">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="{Binding}" />
+                            <TextBlock Text="{Binding Path=Price, StringFormat=c }" Grid.Column="1" TextAlignment="Right"/>
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <ListBox ItemsSource="{Binding Path=Price}" Grid.Row="1" Grid.Column="1">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Text="{Binding}" />
-                    </Grid>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
 
-        <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding Path=Subtotal, StringFormat=c}"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Path=Subtotal, StringFormat=c}"/>
     </Grid>
 </UserControl>
