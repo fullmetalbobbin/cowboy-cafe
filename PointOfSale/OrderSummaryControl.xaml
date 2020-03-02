@@ -13,21 +13,21 @@
     </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200">
+            <ColumnDefinition Width="180">
             </ColumnDefinition>
             <ColumnDefinition Width="100">
             </ColumnDefinition>
        </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-            <RowDefinition Height="25">
+            <RowDefinition Height="21">
             </RowDefinition>
             <RowDefinition Height="400">
             </RowDefinition>
             <RowDefinition Height="25">
             </RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock VerticalAlignment="Center" FontSize="16" Grid.Row="0" Grid.ColumnSpan="1">Order</TextBlock>
-        <TextBlock Text="{Binding Path=OrderNumber}" VerticalAlignment="Center" FontSize="16" Grid.Row="0" Grid.ColumnSpan="1"/>
+        <TextBlock VerticalAlignment="Center" FontSize="16" Grid.Row="0" Grid.ColumnSpan="1">Order #</TextBlock>
+        <TextBlock Text="{Binding Path=OrderNumber}" VerticalAlignment="Center" FontSize="16" Grid.Row="0" Grid.ColumnSpan="1" Margin="70,0,0,0"/>
         <TextBlock VerticalAlignment="Center" FontSize="16" Grid.Row="2"> Subtotal</TextBlock>
    
             <ListBox ItemsSource="{Binding Path=Items}" Grid.Row="1" Grid.Column="0">
@@ -38,7 +38,7 @@
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="{Binding}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding}" />
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
