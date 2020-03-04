@@ -17,23 +17,32 @@ namespace CowboyCafe.Data
     /// </summary>
     public class Order : INotifyPropertyChanged
     {
-
+        /// <summary>
+        /// Event handle to enable listeners to be aware of a property change
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged; //*approvedinclass 
         //(saying that any of the public properties, we will tell the event listeners about this change!)
 
 
         private static uint lastOrderNumber = 0;  
+        /// <summary>
+        /// Gets the last oder number and retuns the next order number to be used
+        /// </summary>
         public uint OrderNumber { get { return lastOrderNumber++; } }
 
 
-        private List<IOrderItem> items = new List<IOrderItem>();  //?
+        private List<IOrderItem> items = new List<IOrderItem>();
+        /// <summary>
+        /// Gets IOrderItem item and adds it to a list of items
+        /// </summary>
         public IEnumerable<IOrderItem> Items { get { return items.ToArray(); } }
 
 
-        private List<IOrderItem> prices = new List<IOrderItem>();  //?
+        private List<IOrderItem> prices = new List<IOrderItem>();
+        /// <summary>
+        /// Gets IOrderItem price and adds it to a list of prices
+        /// </summary>
         public IEnumerable<IOrderItem> Prices { get { return prices.ToArray(); } }
-        //public IEnumerable<IOrderItem> Items => throw new NotImplementedException();
-        //public double Subtotal => 0;  //*inclass
 
 
         /// <summary>

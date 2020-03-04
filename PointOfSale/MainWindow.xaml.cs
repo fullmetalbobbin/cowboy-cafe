@@ -1,4 +1,10 @@
-﻿
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * MainWindow.xaml.cs
+ * Author: Amanda Dreesen
+ * Description: CIS308 Cowboy Cafe
+ *              
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +29,9 @@ namespace PointOfSale
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Initializes MainWindow
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -30,17 +39,33 @@ namespace PointOfSale
             this.DataContext = order;
         }
 
+
+        /// <summary>
+        /// Button click event for ItemSelection
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ItemSelectionButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Button click event for CancelOrder
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CancelOrderButton_Click(object sender, RoutedEventArgs e)
         {
             var order = new Order();
             this.DataContext = new Order();
         }
 
+        /// <summary>
+        /// Button click event for CompleteOrder
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CompleteOrderButton_Click(object sender, RoutedEventArgs e)
         {
             var order = new Order();

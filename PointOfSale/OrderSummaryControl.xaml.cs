@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * OrderSummaryControl.xaml.cs
+ * Author: Amanda Dreesen
+ * Description: CIS308 Cowboy Cafe
+ *              
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -19,7 +26,9 @@ namespace PointOfSale
     /// </summary>
     public partial class OrderSummaryControl : UserControl
     { 
-
+        /// <summary>
+        /// Initializes Order Summary Control
+        /// </summary>
         public OrderSummaryControl()
         {
             InitializeComponent();          

@@ -19,7 +19,7 @@ namespace CowboyCafe.Data
     public abstract class Side : IOrderItem
     {
         /// <summary>
-        /// Gets the size of the entree
+        /// Gets the size of the side
         /// </summary>
         public virtual Size Size { get; set; }
 
@@ -29,10 +29,13 @@ namespace CowboyCafe.Data
         public abstract double Price { get; }
 
         /// <summary>
-        /// Gets the calories of the entree
+        /// Gets the calories of the side
         /// </summary>
         public abstract uint Calories { get; }
 
+        /// <summary>
+        /// Gets the special instructions for the side
+        /// </summary>
         public virtual List<string> SpecialInstructions { get; set; }
     }
 }

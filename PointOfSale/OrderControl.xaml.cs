@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * OrderControl.xaml.cs
+ * Author: Amanda Dreesen
+ * Description: CIS308 Cowboy Cafe
+ *              
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -19,7 +27,9 @@ namespace PointOfSale
     /// </summary>
     public partial class OrderControl : UserControl
     {
-
+        /// <summary>
+        /// Initializes Order Control
+        /// </summary>
         public OrderControl()
         {
             InitializeComponent();
@@ -28,7 +38,11 @@ namespace PointOfSale
             //AddPecosPulledPorkButton.Click += AddPecosPulledPorkButton_Click;
         }
 
-
+        /// <summary>
+        /// Button click event for adding AngryChicken to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddAngryChickenButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -39,6 +53,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding CowpokeChili to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddCowpokeChiliButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -47,7 +66,11 @@ namespace PointOfSale
             }
         }
 
-
+        /// <summary>
+        /// Button click event for adding RustlersRibs to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddRustlersRibsButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -56,6 +79,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding PecosPulledPork to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddPecosPulledPorkButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -64,6 +92,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding TrailBurger to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddTrailBurgerButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -72,6 +105,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding DakotaDoubleBurger to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddDakotaDoubleBurgerButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -80,6 +118,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding TxasTripleBurger to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddTexasTripleBurgerButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -88,6 +131,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding ChiliCheeseFries to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddChiliCheeseFriesButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -96,6 +144,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding CornDodgers to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddCornDodgersButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -104,6 +157,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding PanDeCampo to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddPanDeCampoButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -112,6 +170,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding BakedBeans to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddBakedBeansButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -120,6 +183,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding JerkedSoda to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddJerkedSodaButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -128,6 +196,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding TexasTea to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddTexasTeaButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -136,6 +209,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding CowboyCoffee to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddCowboyCoffeeButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
@@ -144,6 +222,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Button click event for adding Water to Order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddWaterButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order o)
