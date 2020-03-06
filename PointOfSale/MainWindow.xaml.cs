@@ -35,41 +35,10 @@ namespace PointOfSale
         public MainWindow()
         {
             InitializeComponent();
-            var order = new Order();
-            this.DataContext = order;
-        }
-
-
-        /// <summary>
-        /// Button click event for ItemSelection
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ItemSelectionButton_Click(object sender, RoutedEventArgs e)
-        {
 
         }
 
-        /// <summary>
-        /// Button click event for CancelOrder
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CancelOrderButton_Click(object sender, RoutedEventArgs e)
-        {
-            var order = new Order();
-            this.DataContext = new Order();
-        }
 
-        /// <summary>
-        /// Button click event for CompleteOrder
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CompleteOrderButton_Click(object sender, RoutedEventArgs e)
-        {
-            var order = new Order();
-            this.DataContext = new Order();
-        }
+
     }
 }

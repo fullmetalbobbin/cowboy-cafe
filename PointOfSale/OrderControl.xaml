@@ -5,58 +5,29 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PointOfSale"
              mc:Ignorable="d" 
-             d:DesignHeight="470" d:DesignWidth="780">
-    <UserControl.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Height" Value="60" />
-        </Style>
-
-    </UserControl.Resources>
-
-    <Grid Margin="12">
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="0*"/>
-            <RowDefinition Height="0*"/>
-        </Grid.RowDefinitions>
+             d:DesignHeight="570" d:DesignWidth="800">
+    <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
+        <DockPanel HorizontalAlignment="Stretch" Grid.Column="0">
+            <Grid DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Name="ItemSelectionButton" Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Left" Click="ItemSelectionButton_Click" Grid.Column="0">Item Selection</Button>
+                <Button Name="CancelOrderButton" Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Left"  Click="CancelOrderButton_Click" Grid.Column="1">Cancel Order</Button>
+                <Button Name="CompleteOrderButton" Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Left"  Click="CompleteOrderButton_Click" Grid.Column="2">Complete Order</Button>
+            </Grid>
+            <Border Name="Container" Grid.Row="1">
+                <local:MenuItemSelectionControl></local:MenuItemSelectionControl>
+            </Border>
+        </DockPanel>
 
-        <StackPanel >
-            <TextBlock TextAlignment="Center" FontSize="16">Entrees</TextBlock>
-            <Button Name="AddAngryChickenButton" Click="AddAngryChickenButton_Click">AngryChicken</Button>
-            <Button Name="AddCowpokeChiliButton" Click="AddCowpokeChiliButton_Click">Cowpoke Chili</Button>
-            <Button Name="AddRustlersRibsButton" Click="AddRustlersRibsButton_Click">Rustler's Ribs</Button>
-            <Button Name="AddPecosPulledPorkButton" Click="AddPecosPulledPorkButton_Click">Pecos Pulled Pork</Button>
-            <Button Name="AddTrailBurgerButton" Click="AddTrailBurgerButton_Click">Trail Burger</Button>
-            <Button Name="AddDakotaDoubleBurgerButton" Click="AddDakotaDoubleBurgerButton_Click">Dakota Double Burger</Button>
-            <Button Name="AddTexasTripleBurgerButton" Click="AddTexasTripleBurgerButton_Click">Texas Triple Burger</Button>
-        </StackPanel>
-
-        <StackPanel Grid.Column="1">
-            <TextBlock TextAlignment="Center" FontSize="16">Side</TextBlock>
-            <Button Name="AddChiliCheeseFriesButton" Click="AddChiliCheeseFriesButton_Click">Chili Cheese Fries</Button>
-            <Button Name="AddCornDodgersButton" Click="AddCornDodgersButton_Click">Corn Dodgers</Button>
-            <Button Name="AddPanDeCampoButton" Click="AddPanDeCampoButton_Click">Pan de Campo</Button>
-            <Button Name="AddBakedBeansButton" Click="AddBakedBeansButton_Click">Baked Beans</Button>
-        </StackPanel>
-
-        <StackPanel Grid.Column="2">
-            <TextBlock TextAlignment="Center" FontSize="16">Drinks</TextBlock>
-            <Button Name="AddJerkedSodaButton" Click="AddJerkedSodaButton_Click">Jerked Soda</Button>
-            <Button Name="AddTexasTeaButton" Click="AddTexasTeaButton_Click">Texas Tea</Button>
-            <Button Name="AddCowboyCoffeeButton" Click="AddCowboyCoffeeButton_Click">Cowboy Coffee</Button>
-            <Button Name="AddWaterButton" Click="AddWaterButton_Click">Water</Button>
-        </StackPanel>
-
-     <!--  <StackPanel Grid.Column="3">
-            <TextBlock TextAlignment="Center">Order</TextBlock>
-            <ListBox Name="OrderList"></ListBox>
-        </StackPanel>-->
-        <local:OrderSummaryControl x:Name="OrderSummary" Grid.Column="3"></local:OrderSummaryControl>
+        <local:OrderSummaryControl Grid.Column="1" Grid.ColumnSpan="2"/>
     </Grid>
+
 </UserControl>
