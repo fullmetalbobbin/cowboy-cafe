@@ -27,7 +27,7 @@
             </Border>
         </DockPanel>
 
-        <local:OrderSummaryControl Grid.Column="1" Grid.ColumnSpan="2"/>
+        <local:OrderSummaryControl Grid.Column="1" Grid.ColumnSpan="2" Margin="0,41,0,0"/>
     </Grid>
 
 </UserControl>
