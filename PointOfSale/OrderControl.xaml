@@ -18,9 +18,9 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button Name="ItemSelectionButton" Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Left" Click="ItemSelectionButton_Click" Grid.Column="0">Item Selection</Button>
-                <Button Name="CancelOrderButton" Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Left"  Click="CancelOrderButton_Click" Grid.Column="1">Cancel Order</Button>
-                <Button Name="CompleteOrderButton" Width="150" Height="30" VerticalAlignment="Top"  HorizontalAlignment="Left"  Click="CompleteOrderButton_Click" Grid.Column="2">Complete Order</Button>
+                <Button Name="ItemSelectionButton" Width="150" Height="30"   Click="ItemSelectionButton_Click" Grid.Column="0">Item Selection</Button>
+                <Button Name="CancelOrderButton" Width="150" Height="30" Click="CancelOrderButton_Click" Grid.Column="1">Cancel Order</Button>
+                <Button Name="CompleteOrderButton" Width="150" Height="30" Click="CompleteOrderButton_Click" Grid.Column="2">Complete Order</Button>
             </Grid>
             <Border Name="Container" Grid.Row="1">
                 <local:MenuItemSelectionControl></local:MenuItemSelectionControl>
