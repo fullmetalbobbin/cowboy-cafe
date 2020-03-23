@@ -30,7 +30,10 @@ namespace CowboyCafe.Data
         public bool Cheese
         {
             get { return cheese; }
-            set { cheese = value; }
+            set 
+            { 
+                cheese = value; 
+            }
         }
 
         private bool sourCream = true;
@@ -40,7 +43,10 @@ namespace CowboyCafe.Data
         public bool SourCream
         {
             get { return sourCream; }
-            set { sourCream = value; }
+            set 
+            { 
+                sourCream = value; 
+            }
         }
 
         private bool greenOnions = true;
@@ -50,7 +56,10 @@ namespace CowboyCafe.Data
         public bool GreenOnions
         {
             get { return greenOnions; }
-            set { greenOnions = value; }
+            set 
+            {
+                greenOnions = value; 
+            }
         }
 
         private bool tortillaStrips = true;

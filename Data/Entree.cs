@@ -7,6 +7,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace CowboyCafe.Data
@@ -14,8 +15,13 @@ namespace CowboyCafe.Data
     /// <summary>
     /// A base class representing an entree
     /// </summary>
-    public abstract class Entree : IOrderItem
+    public abstract class Entree : IOrderItem, INotifyPropertyChanged
     {
+        /// <summary>
+        ///  Property changed event
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
         /// <summary>
         /// Gets the price of the entree
         /// </summary>
@@ -29,7 +35,13 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Gets the size of the entree
         /// </summary>
-        public virtual List<string> SpecialInstructions { get; set; }
+        public abstract List<string> SpecialInstructions { get; set; }
+
+        protected void NotifyOfPropertyChange(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
+        }
 
     }
 }
