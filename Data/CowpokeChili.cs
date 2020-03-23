@@ -9,14 +9,19 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace CowboyCafe.Data
 {
     /// <summary>
     /// A class representing the Cowpoke Chili entree
     /// </summary>
-    public class CowpokeChili : Entree
+    public class CowpokeChili : Entree, INotifyPropertyChanged
     {
+        /// <summary>
+        ///  Property changed event
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
 
         private bool cheese = true;
         /// <summary>
