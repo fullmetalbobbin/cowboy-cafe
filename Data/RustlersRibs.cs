@@ -8,14 +8,23 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+
 
 namespace CowboyCafe.Data
 {
     /// <summary>
     /// A class representing the RustlersRibs entree
     /// </summary>
-    public class RustlersRibs : Entree
+    public class RustlersRibs : Entree, INotifyPropertyChanged
     {
+
+        /// <summary>
+        ///  Property changed event
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
+
         /// <summary>
         /// The price of the RustlersRibs
         /// </summary>

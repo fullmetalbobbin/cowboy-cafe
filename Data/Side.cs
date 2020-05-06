@@ -36,6 +36,6 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Gets the special instructions for the side
         /// </summary>
-        public virtual List<string> SpecialInstructions { get; set; }
+        public virtual List<string> SpecialInstructions { get; }
     }
 }

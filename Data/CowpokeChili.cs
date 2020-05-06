@@ -32,7 +32,9 @@ namespace CowboyCafe.Data
             get { return cheese; }
             set 
             { 
-                cheese = value; 
+                cheese = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Cheese"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
             }
         }
 
@@ -45,7 +47,9 @@ namespace CowboyCafe.Data
             get { return sourCream; }
             set 
             { 
-                sourCream = value; 
+                sourCream = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SourCream"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
             }
         }
 
@@ -58,7 +62,9 @@ namespace CowboyCafe.Data
             get { return greenOnions; }
             set 
             {
-                greenOnions = value; 
+                greenOnions = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("GreenOnions"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
             }
         }
 
@@ -69,7 +75,12 @@ namespace CowboyCafe.Data
         public bool TortillaStrips
         {
             get { return tortillaStrips; }
-            set { tortillaStrips = value; }
+            set 
+            { 
+                tortillaStrips = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TorillaStrips"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
+            }
         }
 
         /// <summary>

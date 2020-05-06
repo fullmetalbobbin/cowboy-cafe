@@ -10,14 +10,21 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.ComponentModel;
 
 namespace CowboyCafe.Data
 {
     /// <summary>
     /// A class representing the CowboyCoffee drink
     /// </summary>
-    public class CowboyCoffee : Drink
+    public class CowboyCoffee : Drink, INotifyPropertyChanged
     {
+        /// <summary>
+        ///  Property changed event
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
+
         /// <summary>
         /// Override method with switch case to return price given size
         /// </summary>
@@ -72,7 +79,12 @@ namespace CowboyCafe.Data
         public override bool Ice
         {
             get { return ice; }
-            set { ice = value; }
+            set 
+            { 
+                ice = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Ice"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
+            }
         }
 
 
@@ -83,7 +95,12 @@ namespace CowboyCafe.Data
         public bool Decaf
         {
             get { return decaf; }
-            set { decaf = value; }
+            set 
+            { 
+                decaf = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Decaf"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
+            }
         }
 
 
@@ -94,7 +111,12 @@ namespace CowboyCafe.Data
         public bool RoomForCream
         {
             get { return roomForCream; }
-            set { roomForCream = value; }
+            set 
+            { 
+                roomForCream = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("RoomForCream"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
+            }
         }
 
 

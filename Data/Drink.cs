@@ -35,7 +35,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Gets the size of the drink
         /// </summary>
-        public virtual List<string> SpecialInstructions { get; set; }
+        public virtual List<string> SpecialInstructions { get; }
 
         /// <summary>
         /// Gets the size of the drink

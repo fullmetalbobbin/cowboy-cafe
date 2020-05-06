@@ -10,14 +10,21 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.ComponentModel;
 
 namespace CowboyCafe.Data
 {
     /// <summary>
     /// Class representing the BakedBeans side
     /// </summary>
-    public class BakedBeans : Side
+    public class BakedBeans : Side, INotifyPropertyChanged
     {
+        /// <summary>
+        ///  Property changed event
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
+
         /// <summary>
         /// Override method with switch case to return price given a size
         /// </summary>

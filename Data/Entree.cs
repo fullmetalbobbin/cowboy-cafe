@@ -35,7 +35,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Gets the size of the entree
         /// </summary>
-        public abstract List<string> SpecialInstructions { get; set; }
+        public abstract List<string> SpecialInstructions { get; }
 
         protected void NotifyOfPropertyChange(string propertyName)
         {
