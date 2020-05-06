@@ -10,6 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CowboyCafe.Data;
+using SodaFlavor = CowboyCafe.Data.SodaFlavor;
 
 namespace PointOfSale.CustomizationScreens
 {
@@ -22,5 +24,41 @@ namespace PointOfSale.CustomizationScreens
         {
             InitializeComponent();
         }
+
+        private void FlavorRadioButton_Click(object sender, RoutedEventArgs e)
+        {
+            SodaFlavor s;
+
+            switch (((RadioButton)sender).Name)
+            {
+                case "FlavorCreamSodaRadioButton":
+                    s = SodaFlavor.CreamSoda;
+                    break;
+                case "FlavorOrangeSodaRadioButton":
+                    s = SodaFlavor.OrangeSoda;
+                    break;
+                case "FlavorSarsparillaRadioButton":
+                    s = SodaFlavor.Sarsparilla;
+                    break;
+                case "FlavorBirchBeerRadioButton":
+                    s = SodaFlavor.BirchBeer;
+                    break;
+                case "FlavorRootBeerRadioButton":
+                    s = SodaFlavor.RootBeer;
+                    break;
+                default:
+                    throw new NotImplementedException("Appropriate soda flavor not selected");
+            }
+
+
+            if (DataContext is JerkedSoda)
+            {
+                JerkedSoda js = (JerkedSoda)DataContext;
+                js.Flavor = s;
+            }
+            else
+                throw new NotImplementedException("Jerked Soda Flavors only.");
+        }
+
     }
 }

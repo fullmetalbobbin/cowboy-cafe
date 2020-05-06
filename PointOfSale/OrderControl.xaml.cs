@@ -19,6 +19,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CowboyCafe.Data;
+using Size = CowboyCafe.Data.Size;
+using SodaFlavor = CowboyCafe.Data.SodaFlavor;
+using PointOfSale.CustomizationScreens;
 
 namespace PointOfSale
 {

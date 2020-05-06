@@ -12,6 +12,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CowboyCafe.Data;
 
+using PointOfSale.CustomizationScreens;
+//using PointOfSale.ExtensionsMethods;
+
 namespace PointOfSale
 {
     /// <summary>
