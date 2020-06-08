@@ -13,7 +13,7 @@ using System.Windows.Shapes;
 using CowboyCafe.Data;
 
 using PointOfSale.CustomizationScreens;
-//using PointOfSale.ExtensionsMethods;
+using PecosPulledPork = CowboyCafe.Data.PecosPulledPork;
 
 namespace PointOfSale
 {
