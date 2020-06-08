@@ -74,7 +74,9 @@ namespace PointOfSale
             this.DataContext = new Order();
         }
 
-
-
+        internal void Show(PecosPulledPorkCustomization pecosPulledPorkCustomization)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
