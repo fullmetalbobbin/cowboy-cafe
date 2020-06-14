@@ -9,7 +9,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Images\" />
+    <Folder Include="wwwroot\lib\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\Images\BuckingBronco.png" />
+    <None Include="wwwroot\lib\Images\Chuckwagon_in_Girvin,_TX_SCN1077.jfif" />
+    <None Include="wwwroot\lib\Images\Chuckwagon_Texas_1900.jpg" />
   </ItemGroup>
 
   <ItemGroup>
