@@ -43,6 +43,19 @@ namespace CowboyCafe.Data
         public static IEnumerable<IOrderItem> CompleteMenu()
         {
             List<IOrderItem> completeMenu = new List<IOrderItem>();
+            foreach (IOrderItem e in Entrees())
+            {
+                completeMenu.Add(e);
+            }
+            foreach (IOrderItem s in Sides())
+            {
+                completeMenu.Add(s);
+            }
+            foreach (IOrderItem d in Drinks())
+            {
+                completeMenu.Add(d);
+            }
+            return completeMenu;
         }
 
     }
