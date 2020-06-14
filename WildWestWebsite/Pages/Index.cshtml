@@ -1,5 +1,7 @@
 ﻿@page
 @model IndexModel
+@using CowboyCafe.Data;
+
 @{
     ViewData["Title"] = "Home page";
 }
@@ -21,27 +23,39 @@
         You’ve had a hard ride - so take it easy with us.
     </p>
 
-    <div class="float-columns">
-        <div>
-            <h2>Entrees</h2>
-            <p>
+    <div>
+        @if (Model.completeMenu.Count() == 0)
+        {
+            <h6>"No soup for you."</h6>
+            <p> Sorry, there are no items available at this moment.</p>
+            <img src="~/lib/Images/nosoup.jpg" />
+        }
+        else
 
-            </p>
+        <div class="float-columns">
+            <div>
+                <h2>Entrees</h2>
+                <p>
+                    @foreach (IOrderItem entree in @Model)
+                    {
+                    }
+                </p>
+            </div>
+            <div>
+                <h2>Sides</h2>
+                <p>
+
+                </p>
+            </div>
+            <div>
+                <h2>Drinks</h2>
+                <p>
+
+                </p>
+            </div>
+
         </div>
-        <div>
-            <h2>Sides</h2>
-            <p>
-
-            </p>
-        </div>
-        <div>
-            <h2>Drinks</h2>
-            <p>
-
-            </p>
-        </div>
-
+        <div class="clearfix" />
     </div>
-    <div class="clearfix"/>
 
 </div>
