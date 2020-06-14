@@ -12,6 +12,10 @@
     <Folder Include="Pages\Images\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj" />
+  </ItemGroup>
+
 
 
 </Project>
