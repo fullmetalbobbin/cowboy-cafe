@@ -24,36 +24,52 @@
             You’ve had a hard ride - so take it easy with us.
         </p>
 
-        <div>
-            <!-- @if (Model.completeMenu.Count() == 0) -->
 
+        @if (Model.completeMenu.Count() == 0)
+        {
             <h6>"No soup for you."</h6>
             <p> Sorry, there are no items available at this moment.</p>
-            <img src="~/lib/Images/nosoup.jpg" />
+        }
+        else
+        {
+            @foreach (IOrderItem yum in Model.completeMenu)
+            {
+                <div class="float-columns">
+                    <div>
+                        <h2>Entrees</h2>
+                        <p>
+                            @if(yum is Entree)
+                            {
+                                <span>@yum</span>                            
+                            }
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Sides</h2>
+                        <p>
+                            @if (yum is Side)
+                            {
+                                <span>@yum</span>
+                            }
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Drinks</h2>
+                        <p>
+                            @if (yum is Drink)
+                            {
+                                <span>@yum</span>
+                            }
+                        </p>
+                    </div>
 
-
-            <div class="float-columns">
-                <div>
-                    <h2>Entrees</h2>
-                    <p>
-
-                    </p>
                 </div>
-                <div>
-                    <h2>Sides</h2>
-                    <p>
+                <div class="clearfix" />
+            }
+        }
 
-                    </p>
-                </div>
-                <div>
-                    <h2>Drinks</h2>
-                    <p>
 
-                    </p>
-                </div>
 
-            </div>
-            <div class="clearfix" />
-        </div>
+
 
     </div>
