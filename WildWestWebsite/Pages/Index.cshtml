@@ -32,44 +32,75 @@
         }
         else
         {
-            @foreach (IOrderItem yum in Model.completeMenu)
-            {
-                <div class="float-columns">
-                    <div>
-                        <h2>Entrees</h2>
-                        <p>
-                            @if(yum is Entree)
+                <h2>Entrees</h2>
+                <ul class="entrees-list">
+                    @{
+                        int counter = 0;
+                        foreach (IOrderItem yummers in Model.completeMenu)
+                        {
+                            if (yummers is Entree)
                             {
-                                <span>@yum</span>                            
+                                counter++;
+                                <li>
+                                    <h4>@yummers</h4>
+                                    <p>@yummers.Calories  kcal</p>
+                                    <p>$ @yummers.Price</p>
+                                </li>
                             }
-                        </p>
-                    </div>
-                    <div>
-                        <h2>Sides</h2>
-                        <p>
-                            @if (yum is Side)
-                            {
-                                <span>@yum</span>
-                            }
-                        </p>
-                    </div>
-                    <div>
-                        <h2>Drinks</h2>
-                        <p>
-                            @if (yum is Drink)
-                            {
-                                <span>@yum</span>
-                            }
-                        </p>
-                    </div>
+                        }
+                        if (counter == 0)
+                        {
+                            <p>Can't seem to rustle up that grub.</p>
+                        }
+                    }
+                </ul>
 
-                </div>
-                <div class="clearfix" />
-            }
+                <h2>Sides</h2>
+                <ul class="sides-list">
+                    @{
+                        counter = 0;
+                        foreach (IOrderItem yummers in Model.completeMenu)
+                        {
+                            if (yummers is Side)
+                            {
+                                counter++;
+                                <li>
+                                    <h4>@yummers</h4>
+                                    <p>@yummers.Calories  kcal</p>
+                                    <p>$ @yummers.Price</p>
+                                </li>
+                            }
+                        }
+                        if (counter == 0)
+                        {
+                            <p>Can't seem to rustle up that grub.</p>
+                        }
+                    }
+                </ul>
+
+                <h2>Drinks</h2>
+                <ul class="sides-list">
+                    @{
+                        counter = 0;
+                        foreach (IOrderItem yummers in Model.completeMenu)
+                        {
+                            if (yummers is Drink)
+                            {
+                                counter++;
+                                <li>
+                                    <h4>@yummers</h4>
+                                    <p>@yummers.Calories  kcal</p>
+                                    <p>$ @yummers.Price</p>
+                                </li>
+                            }
+                        }
+                        if (counter == 0)
+                        {
+                            <p>Can't seem to rustle up that grub.</p>
+                        }
+                    }
+                </ul>
+        
         }
-
-
-
-
 
     </div>
